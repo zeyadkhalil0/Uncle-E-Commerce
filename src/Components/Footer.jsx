@@ -58,7 +58,7 @@ const Footer = () => {
 
       {/* Bottom section */}
       <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto pt-6 text-gray-400 text-sm">
-        <p>© {new Date().getFullYear()} ShoeVerse. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Uncle Shekabala. All rights reserved Dev | Zeyad Muhammad Khali.</p>
 
         <div className="flex gap-5 mt-4 md:mt-0">
           <a href="#" className="hover:text-indigo-400 transition"><FaFacebookF /></a>
