@@ -55,6 +55,13 @@ const StyledWrapper = styled.div`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, sans-serif;
   }
+      
+  @media (max-width : 768px) {
+    .card{
+    width: 300px;
+    height: 300px;
+    }
+}
 
   .card__shine {
     position: absolute;

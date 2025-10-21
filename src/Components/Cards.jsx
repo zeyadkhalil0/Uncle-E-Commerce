@@ -7,19 +7,32 @@ const Cards = () => {
   const [Products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+ useEffect(() => {
     const getData = async () => {
       const data = await fetchProducts("https://fakestoreapi.com/products");
       setProducts(data);
+
+      const imagePromises = data.slice(14, 20).map(
+        (item) =>
+          new Promise((resolve) => {
+            const img = new Image();
+            img.src = item.image;
+            img.onload = resolve;
+            img.onerror = resolve;
+          })
+      );
+
+      await Promise.all(imagePromises);
       setLoading(false);
     };
+
     getData();
   }, []);
-
+  
   if (loading) {
     return (
-      <div className="absolute inset-0 w-full h-screen flex items-center justify-center  text-xl font-semibold text-gray-600">
-        <Loader/>
+      <div className="absolute bg-gray-200 inset-0 w-full h-screen flex items-center justify-center  text-xl font-semibold text-gray-600 z-50">
+        <Loader />
       </div>
     );
   }
@@ -60,4 +73,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default React.memo(Cards);

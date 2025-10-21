@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="md:relative fixed z-50  bg-gray-900 shadow-md w-full">
+    <nav className="md:relative fixed top-0 z-50  bg-gray-900 shadow-md w-full">
       {/* top bar */}
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}

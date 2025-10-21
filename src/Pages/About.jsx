@@ -7,7 +7,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h1 className="text-4xl font-bold mb-4 text-indigo-700">About Us</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          At <span className="font-semibold text-indigo-600">ShoeVerse</span>, we believe style and comfort
+          At <span className="font-semibold text-indigo-600">Uncle Shekabala</span>, we believe style and comfort
           should go hand in hand. Our mission is to bring you the latest in streetwear,
           sneakers, and jackets that define your individuality.
         </p>
@@ -53,4 +53,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default React.memo(About);

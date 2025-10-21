@@ -16,16 +16,17 @@ const Offers = () => {
       setLoading(false);
     };
     getData();
+
   }, []);
 
   if (loading) {
     return (
-      <div className="absolute inset-0 w-full h-screen flex items-center justify-center  text-xl font-semibold text-gray-600">
+      <div className="absolute bg-gray-200 inset-0 w-full h-screen flex items-center justify-center  text-xl font-semibold text-gray-600 z-50">
         <Loader />
       </div>
     );
   }
-
+  
   return (
     <>
     <section className="py-10 my-12 bg-gray-200">
@@ -38,6 +39,7 @@ const Offers = () => {
         {Products.slice(0, 6).map((item, index) => (
           <ProductCard
             key={index}
+            
             images={item.images[0]}
             title={item.title}
             description={item.description}
@@ -59,4 +61,4 @@ const Offers = () => {
   );
 };
 
-export default Offers;
+export default React.memo(Offers);

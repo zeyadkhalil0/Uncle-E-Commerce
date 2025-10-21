@@ -63,6 +63,13 @@ const StyledWrapper = styled.div`
       Ubuntu, Cantarell, sans-serif;
   }
 
+  @media (max-width : 768px) {
+    .card{
+    width: 300px;
+    height: 300px;
+    }
+}
+
   .card__shine {
     position: absolute;
     inset: 0;

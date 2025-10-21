@@ -18,13 +18,13 @@ const Offers = () => {
 
   return (
     <>
-    <section className="py-10 my-12 bg-gray-200">
+    <section className="py-10   bg-gray-200">
 
       <div id="popular" className="text-center my-16">
         <h1 className="md:text-4xl text-3xl font-bold text-gray-800">Hot Offers You Can't Miss</h1>
       </div>
 
-      <section className="flex flex-wrap  items-center justify-center gap-16">
+      <section className="flex flex-wrap  items-center justify-center md:gap-10 gap-8">
         {Products.slice(6, 27).map((item, index) => (
           <ProductCard
             key={index}
@@ -41,4 +41,4 @@ const Offers = () => {
   );
 };
 
-export default Offers;
+export default React.memo(Offers);

@@ -45,7 +45,7 @@ const Hero = ({loading}) => {
 ];
 
   return (
-    <section className="w-full  md:h-[90vh] md:py-0 py-10  relative">
+    <section className="w-full  md:h-[90vh] md:py-0 py-10 my-20  relative">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -58,7 +58,7 @@ const Hero = ({loading}) => {
         }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className="md:h-[90vh] max-h-screen"
+        className="md:h-[90vh] h-[80vh]"
       >
         {Slides.map((slide, index) => (
           <SwiperSlide key={index} >
