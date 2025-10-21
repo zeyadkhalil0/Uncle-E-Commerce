@@ -18,7 +18,7 @@ export default function Navbar() {
       {/* top bar */}
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
-        <h1 className="text-white font-bold text-2xl tracking-wide">
+        <h1 className="text-white font-bold md:text-2xl text-xl tracking-wide">
           Uncle Shekabala
         </h1>
 
