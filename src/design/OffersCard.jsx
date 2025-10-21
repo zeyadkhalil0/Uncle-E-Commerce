@@ -65,8 +65,8 @@ const StyledWrapper = styled.div`
 
   @media (max-width : 768px) {
     .card{
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 320px;
     }
 }
 
@@ -198,7 +198,14 @@ const StyledWrapper = styled.div`
     transition: all 0.3s ease;
     transform: scale(0.9);
   }
-
+    @media (max-width : 768px) {
+    .card__title{
+        font-size: 0.9em;
+    }
+        .card__description{
+        font-size: 0.7em;
+        }
+}
   /* Hover Effects */
   .card:hover {
     transform: translateY(-10px);

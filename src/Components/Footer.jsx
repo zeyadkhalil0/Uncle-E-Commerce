@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 px-6 md:px-16">
+    <footer className="bg-gray-900 text-gray-300 py-10 px-6 md:px-16 text-center">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700 pb-10">
         {/* Brand */}
         <div>
@@ -21,7 +21,7 @@ const Footer = () => {
             <li><a href="#popular" className="hover:text-indigo-400 transition">Men's Collection</a></li>
             <li><a href="#popular" className="hover:text-indigo-400 transition">Women's Collection</a></li>
             <li><a href="#popular" className="hover:text-indigo-400 transition">New Arrivals</a></li>
-            <li><a href="#offers" className="hover:text-indigo-400 transition">Hot Offers</a></li>
+            <li><a href="/offers" className="hover:text-indigo-400 transition">Hot Offers</a></li>
           </ul>
         </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Support</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-indigo-400 transition">Contact Us</a></li>
+            <li><a href="/About" className="hover:text-indigo-400 transition">About Us</a></li>
             <li><a href="#" className="hover:text-indigo-400 transition">FAQs</a></li>
             <li><a href="#" className="hover:text-indigo-400 transition">Shipping & Returns</a></li>
             <li><a href="#" className="hover:text-indigo-400 transition">Privacy Policy</a></li>
@@ -37,18 +37,18 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div>
+        <div className="flex flex-col items-center justify-center">
           <h3 className="text-lg font-semibold text-white mb-4">Stay Updated</h3>
           <p className="text-gray-400 mb-3">Subscribe to get the latest deals and drops.</p>
-          <form className="flex items-center">
+          <form className="flex flex-col items-center">
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-3 py-2 rounded-l-md text-gray-900 focus:outline-none"
+              className="w-full bg-gray-200 px-3 py-2 mb-4 rounded-md text-gray-900 focus:outline-none"
             />
             <button
               type="submit"
-              className="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700 transition"
+              className="bg-indigo-600  text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition"
             >
               Subscribe
             </button>

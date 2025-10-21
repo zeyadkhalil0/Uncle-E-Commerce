@@ -11,6 +11,9 @@ const Card = ({image, title, price, description,category}) => {
           <div className="card__badge">{category}</div>
           <div style={{bgColor: '#a78bfa'
             ,backgroundImage : `url(${image})`
+           , backgroundPosition : `Center`,
+            backgroundSize : `cover`,
+            backgroundRepeat : `no-repeat`,
           }} className="card__image"  />
           <div className="card__text">
             <p className="card__title">{title}</p>
@@ -58,8 +61,8 @@ const StyledWrapper = styled.div`
       
   @media (max-width : 768px) {
     .card{
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 320px;
     }
 }
 
@@ -191,6 +194,14 @@ const StyledWrapper = styled.div`
     transition: all 0.3s ease;
     transform: scale(0.9);
   }
+    @media (max-width : 768px) {
+    .card__title{
+        font-size: 0.9em;
+    }
+        .card__description{
+        font-size: 0.7em;
+        }
+}
 
   /* Hover Effects */
   .card:hover {
@@ -270,6 +281,7 @@ const StyledWrapper = styled.div`
     100% {
       transform: scale(1);
     }
+      
   }`;
 
 export default Card;
